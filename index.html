@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkers for Dummies!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Checkers for Dummies!</h1>
+    <div id="game-container">
+        <div id="board"></div>
+        <div id="info-panel">
+            <div id="turn-indicator">
+                <h2>Current Turn: <span id="current-turn">Red</span></h2>
+            </div>
+            <div id="instructions">
+                <h2>How to Play:</h2>
+                <ol>
+                    <li>Use arrow keys to move the selector (highlighted square).</li>
+                    <li>Press SPACE to select a piece or confirm a move.</li>
+                    <li>Yellow dots indicate available moves for the selected piece.</li>
+                    <li>Red moves first, then players alternate turns.</li>
+                    <li>Pieces move diagonally forward only, unless they're kings.</li>
+                    <li>To capture, jump over your opponent's piece to an empty square.</li>
+                    <li>Multiple jumps are allowed in a single turn if possible.</li>
+                    <li>Kings can move and capture forwards and backwards.</li>
+                    <li>Win by capturing all of your opponent's pieces.</li>
+                </ol>
+            </div>
+            <div id="scoreboard">
+                <h2>Scoreboard</h2>
+                <p>Red: <span id="red-score">12</span></p>
+                <p>Black: <span id="black-score">12</span></p>
+            </div>
+        </div>
+    </div>
+    <audio id="captureSound" src="capture.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
